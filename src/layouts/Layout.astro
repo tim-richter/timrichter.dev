@@ -1,0 +1,45 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+import '@fontsource/exo';
+import '../styles/base.css';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+
+	<body>
+		<header class="pt-4 pb-8">
+			<div class="container mx-auto max-md:p-2">
+				<ul class="flex gap-2">
+					<li><a href="/" class="underline font-semibold mr-4 text-primary">Home</a></li>
+					<li><a href="/blog" class="underline font-semibold text-primary">Blog</a></li>
+				</ul>
+		</div>
+		</header>
+
+		<main class="container mx-auto max-md:p-2 min-h-screen">
+			<slot />
+		</main>
+
+		<footer class="flex bg-primary bg-opacity-30 p-4 mt-16 text-xs">© 2021-present Tim Richter. All Rights Reserved.</footer>
+	</body>
+</html>
+
+<style is:global>
+	html {
+		background-color: theme('colors.background');
+		color: theme('colors.primary');
+	}
+</style>
