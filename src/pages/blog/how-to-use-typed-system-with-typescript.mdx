@@ -1,25 +1,26 @@
 ---
-layout: ../../layouts/Layout.astro
+layout: ../../layouts/Post.astro
 title: How to use styled-system with typescript
 description: Some recipes to handle the beast that is strongly typed components together with styled-system. We'll start from basic styling and go over to custom props.
 ---
 import { Code } from '../../components/Code/Code.tsx';
+import { Code as AstroCode } from 'astro:components';
 
-# {frontmatter.title}
+<h1 class="text-center">{frontmatter.title}</h1>
 
-Styled-Components ❤️. There are a bunch of libraries already written for it one of which is styled-system which simplifies the creation of a component-based design system.
+Styled-Components. There are a bunch of libraries already written for it one of which is styled-system which simplifies the creation of a component-based design system.
 
-Now styled-system is awesome but I had some trouble finding good ways of integrating it with typescript especially when using custom components. So here is a little guide on how to do it 😉
+Now styled-system is awesome but I had some trouble finding good ways of integrating it with typescript especially when using custom components. So here is a little guide on how to do it.
 
 ## Prerequisite
 
 If you haven't already install the types for styled-system.
 
-```bash
-npm install -D @types/styled-system
-# or with yarn
+<AstroCode code={`npm install -D @types/styled-system
+# or yarn
 yarn add -D @types/styled-system
-```
+# or pnpm
+pnpm add -D @types/styled-system`} lang="bash" />
 
 ## Normally Styled Tags
 

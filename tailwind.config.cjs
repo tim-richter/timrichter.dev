@@ -8,8 +8,9 @@ module.exports = {
       'xl': '1280px',
     },
     fontFamily: {
-      sans: ['Exo', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      sans: ['Inter Variable', 'sans-serif'],
+      serif: ['IBM Plex Mono', 'serif'],
+      mono: ['JetBrains Mono Variable', 'monospace'],
     },
     extend: {
       spacing: {
@@ -20,9 +21,9 @@ module.exports = {
         '4xl': '2rem',
       },
       colors: {
-        "text": "#e7e6e5",
-        "primary": "#6db4e8",
-        "background": "#050202",
+        "text": "#181818",
+        "primary": "#4fc4cf",
+        "background": "#fffffe",
       }
     }
   },

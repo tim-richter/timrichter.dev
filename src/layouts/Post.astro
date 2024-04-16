@@ -6,6 +6,10 @@ export interface Props {
 const { title } = Astro.props;
 
 import '@fontsource/ibm-plex-mono';
+import '@fontsource-variable/inter';
+import '@fontsource-variable/jetbrains-mono';
+
+
 import '../styles/base.css';
 ---
 
@@ -21,13 +25,13 @@ import '../styles/base.css';
 
 	<body class="bg-background text-text grid justify-center">
 		<header class="mx-auto pt-4 pb-8">
-			<ul class="flex gap-7 font-serif">
+			<ul class="flex gap-7">
 				<li><a href="/" class="font-bold">Home</a></li>
 				<li><a href="/blog" class="font-bold">Blog</a></li>
 			</ul>
 		</header>
 
-		<main class="container min-h-screen text-center flex flex-col items-center">
+		<main class="container min-h-screen">
 			<slot />
 		</main>
 

@@ -7,16 +7,16 @@
     font-size: 18px;
   }
 
-  body {
-    @apply text-text text-base;
-  }
-
   h1 {
-    @apply text-4xl font-black mb-16 mt-8;
+    @apply text-4xl font-black mb-16 mt-8 font-serif;
   }
 
   h2 {
-    @apply text-2xl font-semibold mb-4 mt-12;
+    @apply text-2xl font-semibold mb-4 mt-12 font-serif;
+  }
+
+  h3 {
+    @apply text-xl font-semibold mb-2 mt-4 font-serif;
   }
 
   p {
@@ -24,14 +24,14 @@
   }
 
   blockquote {
-    @apply bg-yellow-300 bg-opacity-20 border-l-4 border-l-yellow-300 p-2 rounded-md font-bold;
+    @apply bg-yellow-300 bg-opacity-20 border-l-4 border-l-yellow-300 p-2 rounded-md font-bold font-mono;
   }
 }
 
 pre.astro-code {
-  @apply py-3 rounded-md overflow-hidden;
+  @apply py-3 rounded-md overflow-hidden font-mono;
 }
 
 code .line {
-  @apply p-4;
+  @apply p-4 font-mono;
 }

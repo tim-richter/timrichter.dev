@@ -8,5 +8,10 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [react(), mdx(), tailwind({
     applyBaseStyles: false
-  })]
+  })],
+  markdown: {
+    shikiConfig: {
+      theme: 'catppuccin-frappe'
+    }
+  }
 });
