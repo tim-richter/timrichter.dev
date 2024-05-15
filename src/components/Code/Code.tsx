@@ -20,7 +20,7 @@ export const Code = ({ title, files, deps }: CodeProps) => {
           {title || 'Code Playground'}
         </div>
 
-        <SandpackCodeEditor />
+          <SandpackCodeEditor wrapContent />
 
         <hr className="border-primary" />
 
